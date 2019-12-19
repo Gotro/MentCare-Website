@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  padding: 0px;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: "img/background.jpg";
+  font-family: 'Arial', serif;
+  margin: 0;
+}
+
+h2 {
+  color: #000000;
+}
+
+/* Header */
+.header {
+  padding: 50px;
+  background: #eeeeee;
+}
+
+/* Style the logo link */
+.logo {
+    display: block;
+    float: left;
+    max-width: 190px;
+    margin: 0 auto;
+}
+
+/* Float the link section to the right */
+.link {
+  float: right;
+  color: #808080;
+  text-decoration: none; 
+  background-color: none;
+  font-size: 0.95em;
+}
+
+/* Quick links */
+.quickLink {
+  color: #000000;
+  text-decoration: none; 
+  background-color: none;
+  font-size: 0.95em;
+}
+
+/* Box element to hold text */
+.box {
+  width: 1340px;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid gray;
+  margin: 0;
+}
+
+/* Create two unequal columns that float next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  height: 800px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  height: 800px;
+  padding-left: 20px;
+}
+
+/* Add a card effect */
+.card {
+   background: rgba(255,255,255, 0.8);
+
+   padding: 20px;
+   margin: 20px;
+   height: 700px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer{
+  color: #808080;
+  font-size: 0.95em;
+  text-align: center;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}

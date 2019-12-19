@@ -1,0 +1,35 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<!--	Author: Susannah Lepley
+		Date:	  11/07/2019
+		File:	  login.html
+		Purpose:  Create a form for a user to login with a login name and a password.
+-->
+<html>
+	<head>	
+		<title>MentCare - Login Page</title>
+		<link rel="shortcut icon" type="image/png" sizes="16x16" href="img/favicon.png">
+		<link rel="stylesheet" href="login.css">
+	</head>
+	<body>
+		<body background="img/background.jpg">
+		<form class="login-form" action="login.php" method="POST">
+            	<div class="login-form__logo-container">
+                <img class="login-form__logo" src="img/logo.png" alt="Logo">
+            	</div>
+            	<div class="login-form__content">
+                <div class="login-form__header">Sign in to your account</div>
+                <input class="login-form__input" type="text" name="loginName" placeholder="Username">
+                <input class="login-form__input" type="password" name="password" placeholder="Password">
+                <button class="login-form__button" type="submit">Sign In</button>
+                <div class="login-form__links">
+                <a class="login-form__link" href="./">Forgot your password?</a>
+                </div>
+            </div>
+        </form>
+	<footer><p>&copy Copyright 2019 MentCare</p></footer>
+	</body>
+</html>
